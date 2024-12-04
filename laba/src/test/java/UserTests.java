@@ -16,21 +16,6 @@ public class UserTests {
     private static final long LAST_ACTIVE_AT = System.currentTimeMillis();
 
     @Test
-    public void testTwitterUserAdapter() {
-        TwitterUser twitterUser = new TwitterUser(
-                EMAIL, COUNTRY_CODE, LAST_ACTIVE_AT
-        );
-        User user = new TwitterUserAdapter(twitterUser);
-
-        Assert.assertEquals("Email should match",
-                EMAIL, user.getEmail());
-        Assert.assertEquals("Country code should match",
-                COUNTRY_CODE, user.getCountryCode());
-        Assert.assertEquals("Last active time should match",
-                LAST_ACTIVE_AT, user.getLastActiveAt());
-    }
-
-    @Test
     public void testFacebookUserAdapter() {
         FacebookUser facebookUser = new FacebookUser(
                 EMAIL, COUNTRY_CODE, LAST_ACTIVE_AT

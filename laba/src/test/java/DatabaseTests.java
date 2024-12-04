@@ -40,8 +40,8 @@ public class DatabaseTests {
         DataBaseAdapter adapter = new DataBaseAdapter(dataBase);
         ReportBuilder reportBuilder = new ReportBuilder(adapter);
 
-        // Capture the output
-        java.io.ByteArrayOutputStream outContent = new java.io.ByteArrayOutputStream();
+        java.io.ByteArrayOutputStream outContent =
+        new java.io.ByteArrayOutputStream();
         java.io.PrintStream originalOut = System.out;
         System.setOut(new java.io.PrintStream(outContent));
 
@@ -49,8 +49,10 @@ public class DatabaseTests {
 
         System.setOut(originalOut);
 
-        String expectedOutput = "User Data: " + EXPECTED_USER_DATA + System.lineSeparator()
-                + "Static Data: " + EXPECTED_STATIC_DATA + System.lineSeparator();
+        String expectedOutput = "User Data: "
+        + EXPECTED_USER_DATA + System.lineSeparator()
+        + "Static Data: " + EXPECTED_STATIC_DATA
+        + System.lineSeparator();
 
         Assert.assertEquals("Report output should match",
                 expectedOutput, outContent.toString());
