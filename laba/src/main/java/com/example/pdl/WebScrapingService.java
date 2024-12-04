@@ -1,4 +1,4 @@
-package com.example.task3;
+package com.example.pdl;
 
 public class WebScrapingService {
     public static Company getCompanyInfo(String website) {

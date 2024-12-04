@@ -1,4 +1,4 @@
-package com.example.task1;
+package com.example.user;
 
 public class TwitterUserAdapter implements User {
     private final TwitterUser twitterUser;

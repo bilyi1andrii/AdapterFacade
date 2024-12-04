@@ -1,4 +1,4 @@
-package com.example.task2;
+package com.example.database;
 
 public class DataBaseAdapter {
     private final БазаДаних dataBase;

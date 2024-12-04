@@ -1,4 +1,4 @@
-package com.example.task1;
+package com.example.user;
 
 public class TwitterUser {
     private String userMail;

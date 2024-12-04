@@ -1,4 +1,4 @@
-package com.example.task2;
+package com.example.database;
 
 public class ReportBuilder {
     private DataBaseAdapter db;

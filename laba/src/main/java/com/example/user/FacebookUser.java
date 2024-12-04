@@ -1,4 +1,4 @@
-package com.example.task1;
+package com.example.user;
 
 public class FacebookUser {
     private String userMail;
@@ -8,7 +8,10 @@ public class FacebookUser {
     private long lastUserActiveAt;
 
 
-    public FacebookUser(String userMail, String userCountryCode, long lastUserActiveAt) {
+    public FacebookUser(String userMail,
+                        String userCountryCode,
+                        long lastUserActiveAt) {
+
         this.userMail = userMail;
         this.userCountryCode = userCountryCode;
         this.lastUserActiveAt = lastUserActiveAt;
