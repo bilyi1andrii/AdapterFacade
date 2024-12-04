@@ -5,8 +5,10 @@ import java.io.IOException;
 public class CompanyInfoFacade {
     public static Company getCompanyDetails(String website) throws IOException {
         Company companyFromPDL = PDLReader.getCompanyInfo(website);
-        Company companyFromWebScraping = WebScrapingService.getCompanyInfo(website);
-        Company companyFromBrandfetch = BrandfetchService.getCompanyInfo(website);
+        Company companyFromWebScraping = WebScrapingService
+        .getCompanyInfo(website);
+        Company companyFromBrandfetch = BrandfetchService
+        .getCompanyInfo(website);
 
         String name = getValue(
                 companyFromPDL.getName(),
